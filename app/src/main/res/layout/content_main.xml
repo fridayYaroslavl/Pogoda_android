@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:id="@+id/lblTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Температура в Ярославле"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/lblTemperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/lblTitle"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="90dp"
+        android:text="Текущая температура:"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/lblTemperatureChange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/lblTitle"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="130dp"
+        android:text="Измение температуры:"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/lblPressure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/lblTitle"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="170dp"
+        android:text="Атмосферное давление:"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/lblPressureChange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/lblTitle"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="210dp"
+        android:text="Изменение давления:"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/lblLight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/lblTitle"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginBottom="235dp"
+        android:text="Солнечность:"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/lblAverageTemperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/lblTitle"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="173dp"
+        android:text="Средняя температура \nза последние 24 часа:"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnShowData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="79dp"
+        android:text="Обновить данные"
+        android:textSize="18sp" />
+</RelativeLayout>
